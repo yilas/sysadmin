@@ -16,6 +16,7 @@ func main() {
 
 	// Le scope de i est uniquement limité à cette boucle !
 	for i := 0; i < 10; i++ {
-		fmt.Printf("%d\n", i)
+		fmt.Printf("(Printf) i = %d\n", i)
+		fmt.Println("(Println) i = ", i)
 	}
 }

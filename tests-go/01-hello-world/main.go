@@ -13,4 +13,9 @@ func main() {
 
 	s = "plop"
 	fmt.Printf("%s\n", s)
+
+    # Le scope de i est uniquement limité à cette boucle !
+    for i := 0; i < 10; i++ {
+		fmt.Printf("%d\n", i)
+	}
 }

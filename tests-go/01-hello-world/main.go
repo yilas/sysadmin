@@ -19,4 +19,12 @@ func main() {
 		fmt.Printf("(Printf) i = %d\n", i)
 		fmt.Println("(Println) i = ", i)
 	}
+
+	a = 10
+	b = 20
+	if b < a {
+		fmt.Println("plop !")
+	} else {
+		fmt.Println("plup !")
+	}
 }

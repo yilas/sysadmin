@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	var a int = 10
@@ -26,5 +29,12 @@ func main() {
 		fmt.Println("plop !")
 	} else {
 		fmt.Println("plup !")
+	}
+
+	args := os.Args
+	l := len(args)
+	fmt.Println(args)
+	for i := 0; i < l; i++ {
+		fmt.Printf("%T\n", args[i])
 	}
 }

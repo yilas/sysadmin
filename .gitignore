@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,git,python,visualstudiocode,go,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,git,python,visualstudiocode,go,linux
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,git,python,visualstudiocode,go,linux,hugo
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,git,python,visualstudiocode,go,linux,hugo
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -38,6 +38,21 @@
 
 # Go workspace file
 go.work
+
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock
 
 ### Linux ###
 *~
@@ -303,4 +318,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,git,python,visualstudiocode,go,linux
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,git,python,visualstudiocode,go,linux,hugo

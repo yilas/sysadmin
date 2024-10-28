@@ -8,4 +8,6 @@ RUN gcc -o /app/main /app/main.c
 FROM debian:12
 COPY --from=builder /app/main /output/main-glibc
 
+VOLUME [ "/output" ]
+
 CMD ["echo", "Binaire compilé avec glibc disponible dans /output/main"]

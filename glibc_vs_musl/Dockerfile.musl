@@ -10,4 +10,4 @@ COPY --from=builder /app/main /output/main-musl
 
 VOLUME [ "/output" ]
 
-CMD ["echo", "Binaire compilé avec musl disponible dans /output/main"]
+CMD ["echo", "Binaire compilé avec musl disponible dans /output/main-musl"]

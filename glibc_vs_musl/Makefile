@@ -21,7 +21,7 @@ run_debian: build_debian
 
 # Règle pour tout construire et exécuter
 all: run_alpine run_debian
-	@echo "Les binaires compilés sont disponibles dans le dossier output/."
+	@echo "Les binaires compilés sont disponibles dans le dossier output/"
 
 # Nettoyage des images et des binaires
 clean:

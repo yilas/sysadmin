@@ -1,0 +1,13 @@
+FROM alpine:latest AS builder
+
+RUN apk add --no-cache build-base
+COPY main.c /app/main.c
+RUN gcc -o /app/main /app/main.c
+
+
+FROM alpine:latest
+COPY --from=builder /app/main /output/main
+
+VOLUME /output
+
+CMD ["echo", "Binaire compilé avec musl disponible dans /output/main"]

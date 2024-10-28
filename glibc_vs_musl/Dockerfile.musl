@@ -6,8 +6,8 @@ RUN gcc -o /app/main /app/main.c
 
 
 FROM alpine:latest
-COPY --from=builder /app/main /output/main
+COPY --from=builder /app/main /output/main-musl
 
-VOLUME /output
+VOLUME [ "/output" ]
 
 CMD ["echo", "Binaire compilé avec musl disponible dans /output/main"]
